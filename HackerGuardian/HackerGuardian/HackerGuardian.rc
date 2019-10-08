@@ -1,0 +1,567 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "atlres.h"
+#include "Ribbon.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (Simplified, PRC) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_RCLICK_PROCESS MENU
+BEGIN
+    POPUP "Process"
+    BEGIN
+        MENUITEM "Refresh",                     ID_RM_PROCESS_REFRESH
+        MENUITEM SEPARATOR
+        POPUP "Dump"
+        BEGIN
+            MENUITEM "Process Image",               ID_RM_PROCESS_PROCESSIMAGE
+            MENUITEM "Full Dump",                   ID_RM_PROCESS_FULLDUMP
+            MENUITEM "Mini Dump",                   ID_RM_PROCESS_MINIDUMP
+        END
+        MENUITEM SEPARATOR
+        POPUP "Inject"
+        BEGIN
+            MENUITEM "Remote Thread",               ID_INJECT_REMOTETHREAD
+            MENUITEM "Input Method",                ID_INJECT_INPUTMETHOD
+            MENUITEM "No Module",                   ID_INJECT_NOMODULE
+            MENUITEM SEPARATOR
+            MENUITEM "Kernel",                      ID_INJECT_KERNEL
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Delete File After Termination", ID_PROCESS_DELETEFILEAFTERTERMINATION
+        MENUITEM SEPARATOR
+        MENUITEM "Kill",                        ID_PROCESS_KILL
+        MENUITEM "Force Kill",                  ID_PROCESS_FORCEKILL
+        MENUITEM "Kill By Process Tree",        ID_PROCESS_KILLBYPROCESSTREE
+        MENUITEM SEPARATOR
+        MENUITEM "Verify Signature",            ID_PROCESS_VERIFYSIGNATURE
+        MENUITEM SEPARATOR
+        MENUITEM "Suspend",                     ID_PROCESS_SUSPEND
+        MENUITEM "Resume",                      ID_PROCESS_RESUME
+        MENUITEM SEPARATOR
+        MENUITEM "Properties",                  ID_RM_PROCESS_PROPERTIES
+    END
+END
+
+IDR_RCLICK_DRIVER MENU
+BEGIN
+    POPUP "Driver"
+    BEGIN
+        MENUITEM "Refresh",                     ID_RM_DRIVER_REFRESH
+    END
+END
+
+IDR_RCLICK_PROCESS_MODULE MENU
+BEGIN
+    POPUP "Module"
+    BEGIN
+        MENUITEM "Refresh",                     ID_RM_PROCESS_MODULE_REFRESH
+    END
+END
+
+IDR_RCLICK_PROCESS_MEMORY MENU
+BEGIN
+    POPUP "Memory"
+    BEGIN
+        MENUITEM "Edit",                        ID_RM_PROCESS_MEMORY_EDIT
+        MENUITEM "Disassemble",                 ID_RM_PROCESS_MEMORY_DISASSEMBLE
+        MENUITEM "Zero Memory",                 ID_RM_PROCESS_MEMORY_ZERO
+        MENUITEM "Change Protection",           ID_RM_PROCESS_MEMORY_PROTECT
+        MENUITEM "Free",                        ID_RM_PROCESS_MEMORY_FREE
+    END
+END
+
+IDR_RCLICK_PROCESS_HANDLE MENU
+BEGIN
+    POPUP "Handle"
+    BEGIN
+        MENUITEM "Refresh",                     IDRM_PROCESS_HANDLE_REFRESH
+        MENUITEM SEPARATOR
+        MENUITEM "Close",                       IDRM_PROCESS_HANDLE_CLOSE
+        MENUITEM "Force Close",                 IDRM_PROCESS_HANDLE_FORCECLOSE
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_PROCESS_DEFAULT     ICON                    "res\\ProcessDefault.ico"
+IDI_ICON1               ICON                    "res\\CloseDir.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_HEX_EDITOR DIALOGEX 0, 0, 600, 325
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Hex Editor"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,539,281,42,14
+    PUSHBUTTON      "Cancel",IDCANCEL,539,298,42,14
+    GROUPBOX        "",IDC_STATIC,489,3,98,315
+    LTEXT           "Base (HEX)",IDC_STATIC,494,11,37,8
+    LTEXT           "Size (HEX)",IDC_STATIC,494,40,37,8
+    EDITTEXT        IDC_EDIT_BASE,494,23,87,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SIZE,494,52,87,14,ES_AUTOHSCROLL
+    LTEXT           "Address        0      1      2      3      4      5      6      7     8      9      A      B      C     D      E      F            ASCII / UNICODE",IDC_STATIC,62,11,364,8
+    GROUPBOX        "",IDC_STATIC,57,3,374,20
+    CONTROL         "UNICODE",IDC_CHK_UNICODE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,494,70,47,10
+    EDITTEXT        IDC_EDIT_MASK,494,84,87,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Search",IDC_BTN_SEARCH,539,102,42,14
+    LISTBOX         IDC_LIST_ADDRESS,494,120,87,157,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "File",IDC_BTN_FILE,494,281,42,14
+    PUSHBUTTON      "Save",IDC_BTN_SAVE,494,298,42,14
+END
+
+IDD_DISASSEMBLER DIALOGEX 0, 0, 600, 325
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Disassembler"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,539,281,42,14
+    PUSHBUTTON      "Cancel",IDCANCEL,539,298,42,14
+    GROUPBOX        "",IDC_STATIC,489,3,98,315
+    LTEXT           "Base (HEX)",IDC_STATIC,494,11,37,8
+    LTEXT           "Size (HEX)",IDC_STATIC,494,40,37,8
+    EDITTEXT        IDC_EDIT_BASE,494,23,87,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SIZE,494,52,87,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_LIST_DISASSEMBLER,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,0,0,482,324
+END
+
+IDD_MEMORY_CHANGE_PROTECTION DIALOGEX 0, 0, 150, 69
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Change Protection"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,16,44,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,81,44,50,14
+    GROUPBOX        "Protection",IDC_STATIC,11,3,125,29
+    COMBOBOX        IDC_CBB_PROTECTION,16,14,115,30,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_HEX_EDITOR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 593
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 318
+    END
+
+    IDD_DISASSEMBLER, DIALOG
+    BEGIN
+    END
+
+    IDD_MEMORY_CHANGE_PROTECTION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 143
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 62
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Chinese (Simplified, PRC) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU
+BEGIN
+    POPUP "Basic"
+    BEGIN
+        MENUITEM "Process",                     ID_BASIC_PROCESS
+        MENUITEM "Driver",                      ID_BASIC_DRIVER
+        MENUITEM SEPARATOR
+        MENUITEM "Reload Kernel",               ID_BASIC_RELOAD_KERNEL
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "Kernel"
+    BEGIN
+        MENUITEM "Notify Routine",              ID_KERNEL_NOTIFY_ROUTINE
+        MENUITEM "Filter",                      ID_KERNEL_FILTER
+        MENUITEM "DPC Timer",                   ID_KERNEL_DPC_TIMER
+        MENUITEM "Worker Thread",               ID_KERNEL_WORKER_THREAD
+        MENUITEM "HAL",                         ID_KERNEL_HAL
+        MENUITEM "WDF",                         ID_KERNEL_WDF
+        MENUITEM "File System",                 ID_KERNEL_FILE_SYSTEM
+        MENUITEM "System Debug",                ID_KERNEL_SYSTEM_DEBUG
+        MENUITEM "Object Hijack",               ID_KERNEL_OBJECT_HIJACK
+        MENUITEM "Direct IO",                   ID_KERNEL_DIRECT_IO
+        MENUITEM "GDT",                         ID_KERNEL_GDT
+        MENUITEM SEPARATOR
+        MENUITEM "&Copy Module Memory",         ID_DRIVER_COPY_MODULE_MEMORY
+        MENUITEM SEPARATOR
+        MENUITEM "&Delete Driver(File)",        ID_EDIT_COPY
+        MENUITEM "&Delete Driver(File  Register)", ID_EDIT_PASTE
+    END
+    POPUP "Hook"
+    BEGIN
+        MENUITEM "Message Hook",                ID_HOOK_MESSAGE_HOOK
+        MENUITEM "Process Hook",                ID_HOOK_PROCESS_HOOK
+        MENUITEM "Kernel Callback Table",       ID_HOOK_KERNEL_CALLBACK_TABLE
+        MENUITEM SEPARATOR
+        MENUITEM "SSDT",                        ID_HOOK_SSDT
+        MENUITEM "Shadow SSDT",                 ID_HOOK_SHADOW_SSDT
+        MENUITEM SEPARATOR
+        MENUITEM "FSD",                         ID_HOOK_FSD
+        MENUITEM "Keyboard",                    ID_HOOK_KEYBOARD
+        MENUITEM "Mouse",                       ID_HOOK_MOUSE
+        MENUITEM "Disk",                        ID_HOOK_DISK
+        MENUITEM "Atapi",                       ID_HOOK_ATAPI
+        MENUITEM "Acpi",                        ID_HOOK_ACPI
+        MENUITEM "Scsi",                        ID_HOOK_SCSI
+        MENUITEM "Kernel Hook",                 ID_HOOK_KERNEL_HOOK
+        MENUITEM "Object Type",                 ID_HOOK_OBJECT_TYPE
+        MENUITEM "IDT",                         ID_HOOK_IDT
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Ribbon",                     ID_VIEW_RIBBON
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM "Tree &Pane",                  ID_VIEW_TREEPANE
+    END
+    POPUP "Top Tab"
+    BEGIN
+        MENUITEM "Close",                       ID_TOPTAB_CLOSE
+        MENUITEM "Close All",                   ID_TOPTAB_CLOSEALL
+    END
+    POPUP "Bottom Tab"
+    BEGIN
+        MENUITEM "Close",                       ID_BOTTOMTAB_CLOSE
+        MENUITEM "Close All",                   ID_BOTTOMTAB_CLOSEALL
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About HackerGuardian",       ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\HackerGuardian.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG 0, 0, 187, 102
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,130,81,50,14
+    CTEXT           "HackerGuardian Application v1.0\n\n(c) Copyright 2013",IDC_STATIC,25,57,78,32
+    ICON            IDR_MAINFRAME,IDC_STATIC,55,26,18,20
+    GROUPBOX        "",IDC_STATIC,7,7,115,88
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 95
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""atlres.h""\r\n"
+    "#include ""Ribbon.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#include ""Ribbon.rc""\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR 16, 15
+BEGIN
+    BUTTON      ID_BASIC_PROCESS
+    BUTTON      ID_BASIC_DRIVER
+    SEPARATOR
+    BUTTON      ID_KERNEL_NOTIFY_ROUTINE
+    BUTTON      ID_KERNEL_OBJECT_HIJACK
+    BUTTON      ID_KERNEL_WORKER_THREAD
+    BUTTON      ID_KERNEL_SYSTEM_DEBUG
+    BUTTON      ID_KERNEL_FILE_SYSTEM
+    BUTTON      ID_KERNEL_DPC_TIMER
+    BUTTON      ID_KERNEL_DIRECT_IO
+    BUTTON      ID_KERNEL_FILTER
+    BUTTON      ID_KERNEL_HAL
+    BUTTON      ID_KERNEL_WDF
+    BUTTON      ID_KERNEL_GDT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "CompanyName", "Stanford Studio"
+            VALUE "FileDescription", "HackerGuardian Module"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "HackerGuardian"
+            VALUE "LegalCopyright", "Copyright 2013"
+            VALUE "OriginalFilename", "HackerGuardian.exe"
+            VALUE "ProductName", "Nikita 0.01"
+            VALUE "ProductVersion", "1, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDR_MAINFRAME           "HackerGuardian"
+    IDS_ERR_LARGECLIPBOARD  "You are copying a large amount of data to the clipboard.\r\nAre you sure you wish to do this?"
+    IDS_CAPTION_ERROR       "Error"
+    IDS_CAPTION_WARNING     "Warning"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+    ID_FILE_PAGE_SETUP      "Change the printing options\nPage Setup"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
+    ID_FILE_PRINT           "Print the active document\nPrint"
+    ID_FILE_PRINT_PREVIEW   "Display full pages\nPrint Preview"
+END
+
+STRINGTABLE
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE
+BEGIN
+    ID_WINDOW_NEW           "Open another window for the active document\nNew Window"
+    ID_WINDOW_ARRANGE       "Arrange icons at the bottom of the window\nArrange Icons"
+    ID_WINDOW_CASCADE       "Arrange windows so they overlap\nCascade Windows"
+    ID_WINDOW_TILE_HORZ     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_TILE_VERT     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+    ID_VIEW_RIBBON          "Show or hide the ribbon\nToggle Ribbon"
+END
+
+STRINGTABLE
+BEGIN
+    ATL_IDS_SCSIZE          "Change the window size"
+    ATL_IDS_SCMOVE          "Change the window position"
+    ATL_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    ATL_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    ATL_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    ATL_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    ATL_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE
+BEGIN
+    ATL_IDS_SCRESTORE       "Restore the window to normal size"
+    ATL_IDS_SCTASKLIST      "Activate Task List"
+    ATL_IDS_MDICHILD        "Activate this window"
+END
+
+STRINGTABLE
+BEGIN
+    ATL_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE
+BEGIN
+    ATL_IDS_MRU_FILE        "Open this document"
+END
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#include "Ribbon.rc"
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

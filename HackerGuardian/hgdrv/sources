@@ -1,0 +1,27 @@
+TARGETNAME=hgdrv
+TARGETTYPE=DRIVER
+TARGETPATH=..\bin
+
+NO_SAFESEH = 1
+
+TARGETLIBS=\
+#			..\references\disassembler\beaengine-win32\Win32\Lib\BeaEngine.lib	\
+			..\references\disassembler\beaengine-win64\Win64\Lib\BeaEngine64.lib
+
+SOURCES=hgdrv.c		\
+		init.c		\
+		hglib.c		\
+		irpfile.c	\
+		libdasm.c	\
+		hgexport.c	\
+		hgprocess.c	\
+		hgdef.c		\
+#		reload32.c	\
+		reload64.c	\
+		drvsys.c	\
+		registry.c	\
+		hgnotify.c	\
+		sdt.c		\
+		fsd.c		\
+		idt.c		\
+

@@ -1,0 +1,63 @@
+// ******************************************************************************
+// * This is an automatically generated file containing the ribbon resource for *
+// * your application.                                                          *
+// ******************************************************************************
+
+#include ".\Ribbon.h"
+
+STRINGTABLE 
+BEGIN
+    ID_TAB_BASIC_LabelTitle_RESID L"Basic" /* LabelTitle ID_TAB_BASIC_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    ID_GROUP_PROCESS_SETTINGS_LabelTitle_RESID L"Function" /* LabelTitle ID_GROUP_PROCESS_SETTINGS_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    ID_GROUP_PROCESS_RETRIEVE_LabelTitle_RESID L"Refresh" /* LabelTitle ID_GROUP_PROCESS_RETRIEVE_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    ID_GROUP_SETTING_LabelTitle_RESID L"Setting" /* LabelTitle ID_GROUP_SETTING_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    ID_GROUP_VIEW_LabelTitle_RESID L"View" /* LabelTitle ID_GROUP_VIEW_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    ID_TAB_KERNEL_LabelTitle_RESID L"Kernel" /* LabelTitle ID_TAB_KERNEL_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    ID_GROUP_MISCELLANEOUS_LabelTitle_RESID L"Miscellaneous" /* LabelTitle ID_GROUP_MISCELLANEOUS_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    ID_TAB_HOOK_LabelTitle_RESID L"Hook" /* LabelTitle ID_TAB_HOOK_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    ID_GROUP_SSDT_LabelTitle_RESID L"SSDT" /* LabelTitle ID_GROUP_SSDT_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    ID_GROUP_KERNEL_LabelTitle_RESID L"Kernel Mode" /* LabelTitle ID_GROUP_KERNEL_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    ID_GROUP_USER_LabelTitle_RESID L"User Mode" /* LabelTitle ID_GROUP_USER_LabelTitle_RESID: (null) */
+END
+
+APPLICATION_RIBBON    UIFILE    "Ribbon.bml"

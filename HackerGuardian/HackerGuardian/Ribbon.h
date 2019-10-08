@@ -1,0 +1,79 @@
+// *****************************************************************************
+// * This is an automatically generated header file for UI Element definition  *
+// * resource symbols and values. Please do not modify manually.               *
+// *****************************************************************************
+
+#pragma once
+
+#define ID_BASIC_DRIVER 0x7000 
+#define ID_BASIC_PROCESS 0x7001 
+#define ID_BASIC_RELOAD_KERNEL 0x7002 
+#define ID_KERNEL_NOTIFY_ROUTINE 0x8A00 
+#define ID_KERNEL_FILTER 0x8001 
+#define ID_KERNEL_DPC_TIMER 0x8A02 
+#define ID_KERNEL_WORKER_THREAD 0x8A03 
+#define ID_KERNEL_HAL 0x8A04 
+#define ID_KERNEL_WDF 0x8A05 
+#define ID_KERNEL_FILE_SYSTEM 0x8A06 
+#define ID_KERNEL_SYSTEM_DEBUG 0x8A07 
+#define ID_KERNEL_OBJECT_HIJACK 0x8A08 
+#define ID_KERNEL_DIRECT_IO 0x8A09 
+#define ID_KERNEL_GDT 0x8A0A 
+#define ID_HOOK_MESSAGE_HOOK 0x9800 
+#define ID_HOOK_PROCESS_HOOK 0x9801 
+#define ID_HOOK_KERNEL_CALLBACK_TABLE 0x9802 
+#define ID_HOOK_SSDT 0x9803 
+#define ID_HOOK_SHADOW_SSDT 0x9804 
+#define ID_HOOK_FSD 0x9805 
+#define ID_HOOK_KEYBOARD 0x9806 
+#define ID_HOOK_MOUSE 0x9807 
+#define ID_HOOK_DISK 0x9808 
+#define ID_HOOK_ATAPI 0x9809 
+#define ID_HOOK_ACPI 0x980A 
+#define ID_HOOK_SCSI 0x980B 
+#define ID_HOOK_KERNEL_HOOK 0x980C 
+#define ID_HOOK_OBJECT_TYPE 0x980D 
+#define ID_HOOK_IDT 0x980E 
+#define ID_DRIVER_REFRESH 0xA100 
+#define ID_DRIVER_COPY_MODULE_MEMORY 0xA101 
+#define ID_WINDOW_NEW 0xE130 
+#define ID_WINDOW_SPLIT 0xE135 
+#define ID_APP_ABOUT 0xE140 
+#define ID_APP_EXIT 0xE141 
+#define ID_NEXT_PANE 0xE150 
+#define ID_PREV_PANE 0xE151 
+#define ID_PANE_CLOSE 0xE152 
+#define ID_VIEW_TOOLBAR 0xE800 
+#define ID_VIEW_STATUS_BAR 0xE801 
+#define ID_VIEW_RIBBON 0xE804 
+#define ID_PROCESS_RING0_THREAD 0xD000 
+#define ID_PROCESS_RING0_MODULE 0xD001 
+#define ID_PROCESS_RING3_THREAD 0xD100 
+#define ID_PROCESS_RING3_MODULE 0xD101 
+#define ID_PROCESS_NAME 0xD200 
+#define ID_TAB_BASIC 2 
+#define ID_TAB_BASIC_LabelTitle_RESID 60001
+#define ID_GROUP_PROCESS_SETTINGS 3 
+#define ID_GROUP_PROCESS_SETTINGS_LabelTitle_RESID 60002
+#define ID_GROUP_PROCESS_RETRIEVE 4 
+#define ID_GROUP_PROCESS_RETRIEVE_LabelTitle_RESID 60003
+#define ID_GROUP_SETTING 5 
+#define ID_GROUP_SETTING_LabelTitle_RESID 60004
+#define ID_GROUP_VIEW 6 
+#define ID_GROUP_VIEW_LabelTitle_RESID 60005
+#define ID_TAB_KERNEL 7 
+#define ID_TAB_KERNEL_LabelTitle_RESID 60006
+#define ID_GROUP_MISCELLANEOUS 8 
+#define ID_GROUP_MISCELLANEOUS_LabelTitle_RESID 60007
+#define ID_TAB_HOOK 9 
+#define ID_TAB_HOOK_LabelTitle_RESID 60008
+#define ID_GROUP_SSDT 10 
+#define ID_GROUP_SSDT_LabelTitle_RESID 60009
+#define ID_GROUP_KERNEL 11 
+#define ID_GROUP_KERNEL_LabelTitle_RESID 60010
+#define ID_GROUP_USER 12 
+#define ID_GROUP_USER_LabelTitle_RESID 60011
+#define ID_RIBBON_APP_MENU 13 
+#define ID_SAVEMORE 14 
+#define ID_PRINTMORE 15 
+#define ID_RIBBON_QAT 16 

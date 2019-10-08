@@ -1,0 +1,355 @@
+<!-- Ribbon.xml -->
+
+<!-- http://msdn.microsoft.com/en-us/library/windows/desktop/dd316927(v=vs.85).aspx -->
+
+<Application xmlns="http://schemas.microsoft.com/windows/2009/Ribbon">
+
+  <Application.Commands>
+
+    <!-- HackerGuardian.rc Commands -->
+    <Command Name="wtl_BASIC_DRIVER" Symbol="ID_BASIC_DRIVER" Id="0x7000"/>
+    <Command Name="wtl_BASIC_PROCESS" Symbol="ID_BASIC_PROCESS" Id="0x7001"/>
+    <Command Name="wtl_BASIC_RELOAD_KERNEL" Symbol="ID_BASIC_RELOAD_KERNEL" Id="0x7002"/>
+
+    <Command Name="wtl_KERNEL_NOTIFY_ROUTINE" Symbol="ID_KERNEL_NOTIFY_ROUTINE" Id="0x8A00"/>
+    <Command Name="wtl_KERNEL_FILTER" Symbol="ID_KERNEL_FILTER" Id="0x8001"/>
+    <Command Name="wtl_KERNEL_DPC_TIMER" Symbol="ID_KERNEL_DPC_TIMER" Id="0x8A02"/>
+    <Command Name="wtl_KERNEL_WORKER_THREAD" Symbol="ID_KERNEL_WORKER_THREAD" Id="0x8A03"/>
+    <Command Name="wtl_KERNEL_HAL" Symbol="ID_KERNEL_HAL" Id="0x8A04"/>
+    <Command Name="wtl_KERNEL_WDF" Symbol="ID_KERNEL_WDF" Id="0x8A05"/>
+    <Command Name="wtl_KERNEL_FILE_SYSTEM" Symbol="ID_KERNEL_FILE_SYSTEM" Id="0x8A06"/>
+    <Command Name="wtl_KERNEL_SYSTEM_DEBUG" Symbol="ID_KERNEL_SYSTEM_DEBUG" Id="0x8A07"/>
+    <Command Name="wtl_KERNEL_OBJECT_HIJACK" Symbol="ID_KERNEL_OBJECT_HIJACK" Id="0x8A08"/>
+    <Command Name="wtl_KERNEL_DIRECT_IO" Symbol="ID_KERNEL_DIRECT_IO" Id="0x8A09"/>
+    <Command Name="wtl_KERNEL_GDT" Symbol="ID_KERNEL_GDT" Id="0x8A0A"/>
+
+    <Command Name="wtl_HOOK_MESSAGE_HOOK" Symbol="ID_HOOK_MESSAGE_HOOK" Id="0x9800"/>
+    <Command Name="wtl_HOOK_PROCESS_HOOK" Symbol="ID_HOOK_PROCESS_HOOK" Id="0x9801"/>
+    <Command Name="wtl_HOOK_KERNEL_CALLBACK_TABLE" Symbol="ID_HOOK_KERNEL_CALLBACK_TABLE" Id="0x9802"/>
+    <Command Name="wtl_HOOK_SSDT" Symbol="ID_HOOK_SSDT" Id="0x9803"/>
+    <Command Name="wtl_HOOK_SHADOW_SSDT" Symbol="ID_HOOK_SHADOW_SSDT" Id="0x9804"/>
+    <Command Name="wtl_HOOK_FSD" Symbol="ID_HOOK_FSD" Id="0x9805"/>
+    <Command Name="wtl_HOOK_KEYBOARD" Symbol="ID_HOOK_KEYBOARD" Id="0x9806"/>
+    <Command Name="wtl_HOOK_MOUSE" Symbol="ID_HOOK_MOUSE" Id="0x9807"/>
+    <Command Name="wtl_HOOK_DISK" Symbol="ID_HOOK_DISK" Id="0x9808"/>
+    <Command Name="wtl_HOOK_ATAPI" Symbol="ID_HOOK_ATAPI" Id="0x9809"/>
+    <Command Name="wtl_HOOK_ACPI" Symbol="ID_HOOK_ACPI" Id="0x980A"/>
+    <Command Name="wtl_HOOK_SCSI" Symbol="ID_HOOK_SCSI" Id="0x980B"/>
+    <Command Name="wtl_HOOK_KERNEL_HOOK" Symbol="ID_HOOK_KERNEL_HOOK" Id="0x980C"/>
+    <Command Name="wtl_HOOK_OBJECT_TYPE" Symbol="ID_HOOK_OBJECT_TYPE" Id="0x980D"/>
+    <Command Name="wtl_HOOK_IDT" Symbol="ID_HOOK_IDT" Id="0x980E"/>
+    
+    <!--
+    <Command Name="wtl_FILE_NEW" Symbol="ID_FILE_NEW" Id="0xE100"/>
+    <Command Name="wtl_FILE_OPEN" Symbol="ID_FILE_OPEN" Id="0xE101"/>
+    <Command Name="wtl_FILE_CLOSE" Symbol="ID_FILE_CLOSE" Id="0xE102"/>
+    <Command Name="wtl_FILE_SAVE" Symbol="ID_FILE_SAVE" Id="0xE103"/>
+    <Command Name="wtl_FILE_SAVE_AS" Symbol="ID_FILE_SAVE_AS" Id="0xE104"/>
+
+    <Command Name="wtl_FILE_PAGE_SETUP" Symbol="ID_FILE_PAGE_SETUP" Id="0xE105"/>
+    <Command Name="wtl_FILE_PRINT_SETUP" Symbol="ID_FILE_PRINT_SETUP" Id="0xE106"/>
+    <Command Name="wtl_FILE_PRINT" Symbol="ID_FILE_PRINT" Id="0xE107"/>
+    <Command Name="wtl_FILE_PRINT_DIRECT" Symbol="ID_FILE_PRINT_DIRECT" Id="0xE108"/>
+    <Command Name="wtl_FILE_PRINT_PREVIEW" Symbol="ID_FILE_PRINT_PREVIEW" Id="0xE109"/>
+
+    <Command Name="wtl_EDIT_COPY" Symbol="ID_EDIT_COPY" Id="0xE122"/>
+    <Command Name="wtl_EDIT_CUT" Symbol="ID_EDIT_CUT" Id="0xE123"/>
+    <Command Name="wtl_EDIT_FIND" Symbol="ID_EDIT_FIND" Id="0xE124"/>
+    <Command Name="wtl_EDIT_PASTE" Symbol="ID_EDIT_PASTE" Id="0xE125"/>
+
+    <Command Name="wtl_EDIT_SELECT_ALL" Symbol="ID_EDIT_SELECT_ALL" Id="0xE12A"/>
+    <Command Name="wtl_EDIT_UNDO" Symbol="ID_EDIT_UNDO" Id="0xE12B"/>
+    <Command Name="wtl_EDIT_REDO" Symbol="ID_EDIT_REDO" Id="0xE12C"/>
+    -->
+
+    <Command Name="wtl_DRIVER_REFRESH" Symbol="ID_DRIVER_REFRESH" Id="0xA100"/>
+    <Command Name="wtl_DRIVER_COPY_MODULE_MEMORY" Symbol="ID_DRIVER_COPY_MODULE_MEMORY" Id="0xA101"/>
+
+    <Command Name="wtl_WINDOW_NEW" Symbol="ID_WINDOW_NEW" Id="0xE130"/>
+    <Command Name="wtl_WINDOW_SPLIT" Symbol="ID_WINDOW_SPLIT" Id="0xE135"/>
+
+    <Command Name="wtl_APP_ABOUT" Symbol="ID_APP_ABOUT" Id="0xE140"/>
+    <Command Name="wtl_APP_EXIT" Symbol="ID_APP_EXIT" Id="0xE141"/>
+
+    <Command Name="wtl_NEXT_PANE" Symbol="ID_NEXT_PANE" Id="0xE150"/>
+    <Command Name="wtl_PREV_PANE" Symbol="ID_PREV_PANE" Id="0xE151"/>
+    <Command Name="wtl_PANE_CLOSE" Symbol="ID_PANE_CLOSE" Id="0xE152"/>
+
+    <Command Name="wtl_VIEW_TOOLBAR" Symbol="ID_VIEW_TOOLBAR" Id="0xE800"/>
+    <Command Name="wtl_VIEW_STATUS_BAR" Symbol="ID_VIEW_STATUS_BAR" Id="0xE801"/>
+    <Command Name="wtl_VIEW_RIBBON" Symbol="ID_VIEW_RIBBON" Id="0xE804"/>
+
+    <Command Name="wtl_PROCESS_RING0_THREAD" Symbol="ID_PROCESS_RING0_THREAD" Id="0xD000"/>
+    <Command Name="wtl_PROCESS_RING0_MODULE" Symbol="ID_PROCESS_RING0_MODULE" Id="0xD001"/>
+    <Command Name="wtl_PROCESS_RING3_THREAD" Symbol="ID_PROCESS_RING3_THREAD" Id="0xD100"/>
+    <Command Name="wtl_PROCESS_RING3_MODULE" Symbol="ID_PROCESS_RING3_MODULE" Id="0xD101"/>
+    <Command Name="wtl_PROCESS_NAME" Symbol="ID_PROCESS_NAME" Id="0xD200"/>
+
+
+    <!-- Tab Process -->
+    <Command Name="TabBasic" Symbol="ID_TAB_BASIC" LabelTitle="Basic" />
+
+    <!-- Groups -->
+    <Command Name="GroupBasicFunction" Symbol="ID_GROUP_PROCESS_SETTINGS"
+             LabelTitle="Function" />
+    <Command Name="GroupProcessRefresh" Symbol="ID_GROUP_PROCESS_RETRIEVE"
+             LabelTitle="Refresh" />
+    <Command Name="GroupSetting" Symbol="ID_GROUP_SETTING"
+             LabelTitle="Setting" />
+    <Command Name="GroupView" Symbol="ID_GROUP_VIEW"
+             LabelTitle="View" />
+
+    <!-- Tab Kernel -->
+    <Command Name="TabKernel" Symbol="ID_TAB_KERNEL" LabelTitle="Kernel" />
+
+    <!-- Groups -->
+    <Command Name="GroupMiscellaneous" Symbol="ID_GROUP_MISCELLANEOUS"
+             LabelTitle="Miscellaneous" />
+    
+    <!-- Tab Hook -->
+    <Command Name="TabHook" Symbol="ID_TAB_HOOK" LabelTitle="Hook" />
+    
+    <!-- Groups -->
+    <Command Name="GroupSsdt" Symbol="ID_GROUP_SSDT"
+             LabelTitle="SSDT" />
+    <Command Name="GroupKernel" Symbol="ID_GROUP_KERNEL"
+             LabelTitle="Kernel Mode" />
+    <Command Name="GroupUser" Symbol="ID_GROUP_USER"
+             LabelTitle="User Mode" />
+
+    <!-- App Menu, MRU list, Help button and Quick Access Toolbar -->
+    <Command Name="AppMenu" Symbol="ID_RIBBON_APP_MENU"/>
+    <Command Name="SaveMore" Symbol="ID_SAVEMORE"/>
+    <Command Name="PrintMore" Symbol="ID_PRINTMORE"/>
+
+    <Command Name="QAT" Symbol="ID_RIBBON_QAT"/>
+  </Application.Commands>
+
+  <Application.Views>
+    <Ribbon>
+      <!-- Application Menu -->
+      <Ribbon.ApplicationMenu >
+        <ApplicationMenu CommandName="AppMenu" >
+        <!--
+          <MenuGroup Class="StandardItems" >
+            <Button CommandName="wtl_FILE_NEW"/>
+            <Button CommandName="wtl_FILE_OPEN"/>
+         -->
+            <!-- Saving SplitButton -->
+        <!--
+            <SplitButton CommandName="SaveMore">
+              <SplitButton.ButtonItem>
+                <Button CommandName="wtl_FILE_SAVE" />
+              </SplitButton.ButtonItem>
+              <SplitButton.MenuGroups>
+                <MenuGroup Class="StandardItems">
+                  <Button CommandName="wtl_FILE_SAVE" />
+                  <Button CommandName="wtl_FILE_SAVE_AS" />
+                </MenuGroup>
+              </SplitButton.MenuGroups>
+            </SplitButton>
+         -->
+            <!-- Printing SplitButton -->
+        <!--
+            <SplitButton CommandName="PrintMore">
+              <SplitButton.ButtonItem>
+                <Button CommandName="wtl_FILE_PRINT"/>
+              </SplitButton.ButtonItem>
+              <SplitButton.MenuGroups>
+                <MenuGroup Class="StandardItems">
+                  <Button CommandName="wtl_FILE_PRINT" />
+                  <Button CommandName="wtl_FILE_PRINT_PREVIEW"/>
+                  <Button CommandName="wtl_FILE_PRINT_SETUP"/>
+                </MenuGroup>
+              </SplitButton.MenuGroups>
+            </SplitButton>
+          </MenuGroup>
+         -->
+          <MenuGroup >
+            <Button CommandName="wtl_APP_EXIT"/>
+          </MenuGroup>
+        </ApplicationMenu>
+      </Ribbon.ApplicationMenu >
+
+      <!-- Help button -->
+      <Ribbon.HelpButton>
+        <HelpButton CommandName="wtl_APP_ABOUT" />
+      </Ribbon.HelpButton>
+
+      <!-- QAT (Quick Access Toolbar) -->
+      <!--
+      <Ribbon.QuickAccessToolbar>
+        <QuickAccessToolbar CommandName="QAT">
+          <QuickAccessToolbar.ApplicationDefaults>
+            <Button CommandName="wtl_FILE_NEW"/>
+            <Button CommandName="wtl_FILE_OPEN"/>
+            <Button CommandName="wtl_FILE_SAVE"/>
+            <Button CommandName="wtl_FILE_PRINT"/>
+          </QuickAccessToolbar.ApplicationDefaults>
+        </QuickAccessToolbar>
+      </Ribbon.QuickAccessToolbar>
+      -->
+
+      <Ribbon.Tabs>
+
+        <Tab CommandName="TabBasic">
+          <Tab.ScalingPolicy>
+            <ScalingPolicy>
+              <ScalingPolicy.IdealSizes>
+                <Scale Group="GroupBasicFunction" Size="Medium"/>
+                <Scale Group="GroupSetting" Size="Large"/>
+                <Scale Group="GroupView" Size="Large"/>
+              </ScalingPolicy.IdealSizes>
+            </ScalingPolicy>
+          </Tab.ScalingPolicy>
+
+          <!-- Process Settings -->
+          <Group CommandName="GroupBasicFunction" SizeDefinition="TwoButtons">
+            <Button CommandName="wtl_BASIC_PROCESS"/>
+            <Button CommandName="wtl_BASIC_DRIVER"/>
+            <!--
+            <SizeDefinition>
+              <ControlNameMap>
+                <ControlNameDefinition Name="wtl_PROCESS_KERNEL_MODE"/>
+              </ControlNameMap>
+              <GroupSizeDefinition Size="Large">
+                <ControlSizeDefinition ControlName="wtl_PROCESS_KERNEL_MODE"
+                                       ImageSize="Small"
+                                       IsLabelVisible="true" />
+              </GroupSizeDefinition>
+              <GroupSizeDefinition Size="Medium">
+                <ControlSizeDefinition ControlName="wtl_PROCESS_KERNEL_MODE"
+                                       ImageSize="Small"
+                                       IsLabelVisible="true" />
+              </GroupSizeDefinition>
+              <GroupSizeDefinition Size="Small">
+                <ControlSizeDefinition ControlName="wtl_PROCESS_KERNEL_MODE"
+                                       ImageSize="Small"
+                                       IsLabelVisible="false" />
+              </GroupSizeDefinition>
+            </SizeDefinition>
+            <CheckBox CommandName="wtl_PROCESS_KERNEL_MODE"/>
+            -->
+          </Group>
+
+          <Group CommandName="GroupSetting">
+            <SizeDefinition>
+              <ControlNameMap>
+                <ControlNameDefinition Name="wtl_BASIC_RELOAD_KERNEL"/>
+              </ControlNameMap>
+              <GroupSizeDefinition Size="Large">
+                <ControlSizeDefinition ControlName="wtl_BASIC_RELOAD_KERNEL"
+                                       ImageSize="Small"
+                                       IsLabelVisible="true" />
+              </GroupSizeDefinition>
+              <GroupSizeDefinition Size="Medium">
+                <ControlSizeDefinition ControlName="wtl_BASIC_RELOAD_KERNEL"
+                                       ImageSize="Small"
+                                       IsLabelVisible="true" />
+              </GroupSizeDefinition>
+              <GroupSizeDefinition Size="Small">
+                <ControlSizeDefinition ControlName="wtl_BASIC_RELOAD_KERNEL"
+                                       ImageSize="Small"
+                                       IsLabelVisible="false" />
+              </GroupSizeDefinition>
+            </SizeDefinition>
+            <CheckBox CommandName="wtl_BASIC_RELOAD_KERNEL"/>
+          </Group>
+
+          <Group CommandName="GroupView">
+            <SizeDefinition>
+              <ControlNameMap>
+                <ControlNameDefinition Name="wtl_VIEW_RIBBON"/>
+                <ControlNameDefinition Name="wtl_VIEW_STATUS_BAR"/>
+              </ControlNameMap>
+              <GroupSizeDefinition Size="Large">
+                <ControlSizeDefinition ControlName="wtl_VIEW_RIBBON"
+                                       ImageSize="Small"
+                                       IsLabelVisible="true" />
+                <ControlSizeDefinition ControlName="wtl_VIEW_STATUS_BAR"
+                                       ImageSize="Small"
+                                       IsLabelVisible="true" />
+              </GroupSizeDefinition>
+              <GroupSizeDefinition Size="Medium">
+                <ControlSizeDefinition ControlName="wtl_VIEW_RIBBON"
+                                       ImageSize="Small"
+                                       IsLabelVisible="true" />
+                <ControlSizeDefinition ControlName="wtl_VIEW_STATUS_BAR"
+                                       ImageSize="Small"
+                                       IsLabelVisible="true" />
+              </GroupSizeDefinition>
+              <GroupSizeDefinition Size="Small">
+                <ControlSizeDefinition ControlName="wtl_VIEW_RIBBON"
+                                       ImageSize="Small"
+                                       IsLabelVisible="false" />
+                <ControlSizeDefinition ControlName="wtl_VIEW_STATUS_BAR"
+                                       ImageSize="Small"
+                                       IsLabelVisible="false" />
+              </GroupSizeDefinition>
+            </SizeDefinition>
+            <CheckBox CommandName="wtl_VIEW_RIBBON"/>
+            <CheckBox CommandName="wtl_VIEW_STATUS_BAR"/>
+          </Group>
+        </Tab>
+        <!-- Tab Kernel -->
+        <Tab CommandName="TabKernel">
+          <Tab.ScalingPolicy>
+            <ScalingPolicy>
+              <ScalingPolicy.IdealSizes>
+                <Scale Group="GroupMiscellaneous" Size="Small"/>
+              </ScalingPolicy.IdealSizes>
+            </ScalingPolicy>
+          </Tab.ScalingPolicy>
+
+          <Group CommandName="GroupMiscellaneous" SizeDefinition="ElevenButtons">
+            <Button CommandName="wtl_KERNEL_NOTIFY_ROUTINE"/>
+            <Button CommandName="wtl_KERNEL_OBJECT_HIJACK"/>
+            <Button CommandName="wtl_KERNEL_WORKER_THREAD"/>
+            <Button CommandName="wtl_KERNEL_SYSTEM_DEBUG"/>
+            <Button CommandName="wtl_KERNEL_FILE_SYSTEM"/>
+            <Button CommandName="wtl_KERNEL_DPC_TIMER"/>
+            <Button CommandName="wtl_KERNEL_DIRECT_IO"/>
+            <Button CommandName="wtl_KERNEL_FILTER"/>
+            <Button CommandName="wtl_KERNEL_HAL"/>
+            <Button CommandName="wtl_KERNEL_WDF"/>
+            <Button CommandName="wtl_KERNEL_GDT"/>
+          </Group>
+        </Tab>
+        <!-- Tab Kernel -->
+        <Tab CommandName="TabHook">
+          <Tab.ScalingPolicy>
+            <ScalingPolicy>
+              <ScalingPolicy.IdealSizes>
+                <Scale Group="GroupSsdt" Size="Medium"/>
+                <Scale Group="GroupKernel" Size="Small"/>
+                <Scale Group="GroupUser" Size="Medium"/>
+              </ScalingPolicy.IdealSizes>
+            </ScalingPolicy>
+          </Tab.ScalingPolicy>
+
+          <Group CommandName="GroupSsdt" SizeDefinition="TwoButtons">
+            <Button CommandName="wtl_HOOK_SSDT"/>
+            <Button CommandName="wtl_HOOK_SHADOW_SSDT"/>
+          </Group>
+          <Group CommandName="GroupKernel" SizeDefinition="TenButtons">
+            <Button CommandName="wtl_HOOK_FSD"/>
+            <Button CommandName="wtl_HOOK_MOUSE"/>
+            <Button CommandName="wtl_HOOK_KEYBOARD"/>
+            <Button CommandName="wtl_HOOK_DISK"/>
+            <Button CommandName="wtl_HOOK_ATAPI"/>
+            <Button CommandName="wtl_HOOK_ACPI"/>
+            <Button CommandName="wtl_HOOK_SCSI"/>
+            <Button CommandName="wtl_HOOK_KERNEL_HOOK"/>
+            <Button CommandName="wtl_HOOK_OBJECT_TYPE"/>
+            <Button CommandName="wtl_HOOK_IDT"/>
+          </Group>
+          <Group CommandName="GroupUser" SizeDefinition="ThreeButtons">
+            <Button CommandName="wtl_HOOK_MESSAGE_HOOK"/>
+            <Button CommandName="wtl_HOOK_PROCESS_HOOK"/>
+            <Button CommandName="wtl_HOOK_KERNEL_CALLBACK_TABLE"/>
+          </Group>
+        </Tab>
+      </Ribbon.Tabs>
+    </Ribbon>
+  </Application.Views>
+</Application>

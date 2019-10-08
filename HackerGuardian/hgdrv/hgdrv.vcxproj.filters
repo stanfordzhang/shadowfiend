@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="hgdrv.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="init.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="hglib.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="irpfile.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="hgexport.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="hgprocess.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="hgdef.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="reload32.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="reload64.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="drvsys.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="registry.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="hgnotify.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sdt.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fsd.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="idt.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdhg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="init.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hglib.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="irpfile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hgioctl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hgdef.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hgexport.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hgbase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tables.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hgprocess.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="reload32.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="reload64.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="drvsys.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="registry.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hgnotify.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hgheader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
